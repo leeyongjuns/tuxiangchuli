@@ -1,59 +1,53 @@
-# Edge Detection Experiment using OpenCV
+Digital Image Processing Experiments (OpenCV)
 
-## Overview
+Overview
 
-This project implements multiple edge detection algorithms using OpenCV.
+This repository contains a series of digital image processing experiments implemented using Python and OpenCV.
 
-The goal of this experiment is to understand and compare different edge detection methods, including:
+The goal of this project is to understand fundamental computer vision algorithms through implementation and comparison.
 
-* Prewitt
-* Sobel
-* Canny
-* FDoG (Flow-based Difference of Gaussian)
+Experiments
 
-Through this experiment, we focus on understanding how each algorithm works and their differences.
+Experiment 1: Edge Detection
+Prewitt
+Sobel
+Canny
+FDoG
 
----
+Focus:
 
-## Tech Stack
+Understanding gradient-based edge detection methods
+Comparing detection accuracy and edge characteristics
 
-* Python
-* OpenCV
-* NumPy
+Experiment 2: Image Interpolation
+Nearest Neighbor
+Bilinear Interpolation
+RBF Interpolation
 
----
+Focus:
 
-## Implementations
+Recovering missing pixels
+Evaluating reconstruction quality using SSIM and L2 metrics
 
-### 1. Prewitt
+Experiment 3: Image Matching and Stitching
+Harris Corner Detection
+SIFT Feature Extraction
+Feature Matching
+Image Stitching
 
-* Implemented using custom convolution kernels
-* Detects edges based on horizontal and vertical gradients
+Focus:
 
-### 2. Sobel
+Comparing feature detection methods
+Aligning and merging images
 
-* Uses OpenCV built-in function
-* More robust to noise compared to Prewitt
+Experiment 4: Object Detection
+HOG Feature Extraction
+SVM Classification
+Sliding Window
+Image Pyramid
+Non-Maximum Suppression (NMS)
 
-### 3. Canny
+Focus:
 
-* Multi-stage edge detection algorithm
-* Includes noise reduction, gradient calculation, and thresholding
-
-### 4. FDoG
-
-* Advanced edge detection method based on flow fields
-* Produces more coherent and stylized edges
-
----
-
-## Analysis
-
-* **Prewitt**: Simple but sensitive to noise
-* **Sobel**: More stable due to smoothing effect
-* **Canny**: Produces thin and accurate edges
-* **FDoG**: Generates smooth edges but edge thickness may vary
-
-FDoG produces edges with varying width due to its flow-based filtering process.
-
-
+Implementing a full object detection pipeline
+Comparing traditional and deep learning approaches
